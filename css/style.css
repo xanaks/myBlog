@@ -6,7 +6,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-
   min-width: 600px;
   max-width: 1920px;
   margin: 0 auto;
@@ -118,10 +117,6 @@ a {
   background: #d7d1c9 url("../img/icon-dropdown.svg") no-repeat right 20px
     center;
 }
-option:first-child {
-  display: none;
-}
-
 
 .drop-list {
   position: absolute;
@@ -590,10 +585,32 @@ figcaption {
 }
 
 .btn-likes {
+  padding: 12px 10px;
+  min-width: 49px;
+  min-height: 50px;
+  /* font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  border: none; */
+  /* background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 12px; */
+  cursor: pointer;
   background-color: transparent;
   border: none;
+  background-image: url("../img/likes.svg");
+}
+.btn-likes.added {
+  background-image: url("../img/liked.svg");
 }
 
+.btn-likes:focus {
+  outline: fuchsia;
+}
+.btn-likes:active {
+  opacity: 1;
+  background-image: url("../img/liked.svg");
+}
 .likes,
 .socials {
   display: flex;
@@ -747,4 +764,8 @@ figcaption {
 }
 .sms-el {
   margin-left: 84px;
+}
+
+option:first-child {
+  display: none;
 }
