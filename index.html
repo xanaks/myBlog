@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мой блог</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap"
       rel="stylesheet"
@@ -62,7 +60,7 @@
         <div class="main-title">
           <h2 class="title-m">Все статьи</h2>
 <!-- Кнопка тем -->
-<div class="dropdown">
+<!-- <div class="dropdown">
           <button class="title-button" type="button">
             Выбрать тему
            
@@ -84,8 +82,17 @@
               <a href="#">Все статьи</a>
             </div>
           </button>
-</div>
-          
+</div> -->
+          <select name="tag" class="title-button" placeholder="Выбрать тему">
+            <option value="none">Выбрать тему</option>
+            <option value="travel">Путешествия</option>
+            <option value="city">Город</option>
+            <option value="book">Книги</option>
+            <option value="photo">Фотографии</option>
+            <option value="food">Рецепты</option>
+          <option value="all"> Все статьи</option>
+                     </select>
+
 
         </div>
 <!-- Карточки со статьями-превью -->
@@ -210,7 +217,7 @@
           рабочих текстов. Буду рада новым сотрудничествам!
           
         <p class="p-aboutme"> Если вы хотите написать мне — это можно сделать в соцсетях
-          или через <a href="index.html#form" class="url-forms">форму</a>. Всегда приятно услышать обратную связь
+          или через <a href="index.html#writeme" class="url-forms">форму</a>. Всегда приятно услышать обратную связь
           от читателей и познакомиться поближе.</p>
           <p class="p-aboutme">Приятного чтения!</p>
           <blockquote class="quote-aboutme">
@@ -315,7 +322,7 @@
     ОТПРАВИТЬ
   </button>
 </div>
-    </form>
+</form>
 
 </section>
 
