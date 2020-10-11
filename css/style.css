@@ -501,7 +501,7 @@ a {
   justify-content: center;
 }
 
-/* ВЫПАДАЮЩИЙ СПИСОК */
+/* ВЫПАДАЮЩИЙ СПИСОК
 .dropdown {
   position: relative;
   display: inline-block;
@@ -530,7 +530,7 @@ a {
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-}
+} */
 
 /* ПОДВАЛ */
 .footer {
