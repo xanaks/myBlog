@@ -118,6 +118,10 @@ a {
   background: #d7d1c9 url("../img/icon-dropdown.svg") no-repeat right 20px
     center;
 }
+option:first-child {
+  display: none;
+}
+
 
 .drop-list {
   position: absolute;
