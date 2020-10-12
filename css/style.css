@@ -654,7 +654,6 @@ figcaption {
 
 .comments-saved {
   width: 793px;
-  height: 429px;
 
   background: #ece1e1;
   border-radius: 10px;
@@ -677,10 +676,18 @@ figcaption {
 .comment-avatar {
   margin-bottom: 14px;
 }
+.comment-avatars {
+  margin-bottom: 14px;
+  background: url("../img/avatar04.jpg");
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+}
 .comments-item:first-child {
   margin-bottom: 55px;
 }
-.comments-item:nth-child(2) {
+.comments-item {
   margin-bottom: 23px;
 }
 

@@ -118,7 +118,7 @@
 
 <section class="comments  form-container">
   <div class="comments-saved">
-    <ul class="comments-list ">
+    <ul class="comments-list">
       <li class="comments-item">
         <div class="comment-wrap">
           <img class="comment-avatar" src="img/avatar01.svg" width="50" height="50" alt="">
@@ -144,15 +144,15 @@
   </div>
   <div class="comments-new">
     <h3 class="comments-title">Оставить комментарий</h3>
-    <form class="comments-form " action="" method="post">
+    <form class="comments-form " action="">
       <div class="form-com">
         <div class="form-elements">
           <div class="name-el">
-            <input class="name-input" type="text" id="id_name" name="name_val" minlength="10" maxlength="200" required>
+            <input class="name-input" type="text" id="id_name" name="name_val" minlength="10" maxlength="20" required>
             <label class="name-label" for="id_name">Имя</label>
           </div>
           <div class="email-el">
-            <input class="email-input" type="email" id="id_email" name="email_val" minlength="10" maxlength="200" required>
+            <input class="email-input" type="email" id="id_email" name="email_val" >
             <label class="email-label" for="id_email" >Почта</label>
           </div>
         </div>
@@ -164,7 +164,7 @@
       </div>
       <div class="sms-el">
         <textarea class="message-input" id="id_message" name="message_val"
-          placeholder="Написать комментарий..." rows="5" ></textarea>
+          placeholder="Написать комментарий..." rows="5" minlength="10" maxlength="200" required></textarea>
       </div>
     </form>
   </div>
@@ -186,5 +186,6 @@
         
         </footer>
         <script src="js/likes.js"></script>
+        <script src="js/comment.js"></script>
 </body>
 </html>
