@@ -1,13 +1,13 @@
 
 
 let commentField = document.querySelector(".message-input");
-let buttonComment = document.querySelector(".button-com");
+
 let formComment = document.querySelector(".comments-form");
 let btnPost = document.querySelector('.button-com');
 let listComments = document.querySelector(".comments-list");
 let commentName = document.querySelector(".name-input");
 let commentEmail = document.querySelector(".email-input");
-
+let charCounter = document.querySelector(".char-counter")
 
 
 
@@ -21,6 +21,8 @@ function createEvement (nameTag, classes, content = undefined) {
   }
   return newItem;
 }
+
+
 
 formComment.onsubmit = function(evt) {
 
@@ -40,8 +42,18 @@ formComment.onsubmit = function(evt) {
   commentName.value = '';
   commentEmail.value= '';
   commentField.value= '';
+  };
 
 
-  
 
+  commentField.oninput = function () {
+  charCounter.textContent = commentField.value.length;
+
+  if (commentField.value.length > 200 || commentField.value.length < 10) {
+    formComment.classList.add('warning');
+    btnPost.disabled = true;
+  } else {
+    formComment.classList.remove('warning');
+    btnPost.disabled = false;
+  }
 };

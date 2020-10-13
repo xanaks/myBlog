@@ -773,6 +773,37 @@ figcaption {
   margin-left: 84px;
 }
 
+.text-counter {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2e2f22;
+}
+
+.comments-form.warning .message-input,
+.form-writeMe.warning .area-letter {
+  color: #f05b29;
+}
+
+.comments-form.warning .message-input,
+.form-writeMe.warning .area-letter {
+  color: #f05b29;
+  border-color: #f05b29;
+}
+
+.comments-form.warning .message-input:focus,
+.form-writeMe.warning .area-letter:focus {
+  outline-color: #f05b29;
+}
+
+.comments-form.warning .char-counter,
+.form-writeMe.warning .char-counter {
+  color: #f05b29;
+  font-weight: bold;
+}
+
 option:first-child {
   display: none;
 }
