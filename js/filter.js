@@ -6,14 +6,15 @@ filter.onchange = function () {
   for (let article of articles) {
     if (article.dataset.category !== filter.value && filter.value !== 'all') {
       article.classList.add('hidden');
-    } 
-    else {
-      article.classList.remove('hidden');
-    }
-    if (article.dataset.category == "book" || article.dataset.category == "travel" || article.dataset.category == "city") {
+        if (article.dataset.category == "book" || article.dataset.category == "travel" || article.dataset.category == "city") {
       bigArticle.classList.add('hidden');
   }
      else {
       bigArticle.classList.remove('hidden');
     }
+    } 
+    else {
+      article.classList.remove('hidden');
+    }
+  
 };
