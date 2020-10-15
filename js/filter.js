@@ -11,11 +11,11 @@ filter.onchange = function () {
     else {
       article.classList.remove('hidden');
     }
-       if (article.dataset.category == 'book' || article.dataset.category == 'travel' || article.dataset.category == 'city') {
+     /*  if (article.dataset.category == 'book' || article.dataset.category == 'travel' || article.dataset.category == 'city') {
       bigArticle.classList.add('hidden');
   }
      else {
       bigArticle.classList.remove('hidden');
-    }
+    }  */
   }
 };
