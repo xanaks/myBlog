@@ -42,7 +42,7 @@ body {
   justify-content: space-between;
 }
 
-//ЛИСТ ЛИ 
+
 .big-list li {
   height:552px;
 }
@@ -53,6 +53,7 @@ li {
 
 ul {
   padding: 0;
+  margin:0;
 }
 
 a {
@@ -264,9 +265,11 @@ a {
 .btn-more {
   display: flex;
   justify-content: center;
-  margin-bottom: 85px;
-  margin-top:62px;
+  
 }
+.more-button{
+margin-bottom: 85px;
+  margin-top:62px;}
 
 .title-about-me,
 .portfolio__title,
