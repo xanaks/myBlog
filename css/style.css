@@ -42,7 +42,11 @@ body {
   justify-content: space-between;
 }
 
-.list,
+//ЛИСТ ЛИ 
+.big-list li {
+  height:552px;
+}
+
 li {
   list-style: none;
 }
@@ -261,6 +265,7 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 85px;
+  margin-top:62px;
 }
 
 .title-about-me,
